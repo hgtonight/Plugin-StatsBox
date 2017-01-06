@@ -16,7 +16,7 @@
 $PluginInfo['StatsBox'] = array(
   'Name' => 'Stats Box',
   'Description' => 'Adds a stats box to the discussions list that shows the total comments, views, and follows. Easily change what shows through simple settings. Inspired by Voting by Mark O\'Sullivan.',
-  'Version' => '1.5',
+  'Version' => '1.5.1',
   'RequiredApplications' => array('Vanilla' => '2.0.18.8'),
   'RequiredTheme' => FALSE,
   'RequiredPlugins' => FALSE,
@@ -85,7 +85,7 @@ class StatsBoxPlugin extends Gdn_Plugin {
 
   private function _AddResources($Sender, $Forced = FALSE) {
     if(C('Plugins.StatsBox.DisableCSS', FALSE) == FALSE || $Forced) {
-      $Sender->AddCSSFile($this->GetResource('design/statsbox.css', FALSE, FALSE));
+      $Sender->AddCSSFile('statsbox.css', 'plugins/StatsBox);
     }
   }
 
