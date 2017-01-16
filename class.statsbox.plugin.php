@@ -16,7 +16,7 @@
 $PluginInfo['StatsBox'] = array(
   'Name' => 'Stats Box',
   'Description' => 'Adds a stats box to the discussions list that shows the total comments, views, and follows. Easily change what shows through simple settings. Inspired by Voting by Mark O\'Sullivan.',
-  'Version' => '1.5.22,
+  'Version' => '1.5.2',
   'RequiredApplications' => array('Vanilla' => '2.0.18.8'),
   'RequiredTheme' => FALSE,
   'RequiredPlugins' => FALSE,
